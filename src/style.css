@@ -9,4 +9,18 @@
     box-sizing: border-box;
     font-family: 'Arial', sans-serif;
   }
-  
+
+  .nav-link::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 2px; /* Thickness of the underline */
+    background-color: #F19645;
+    transition: width 0.3s ease;
+ }
+ 
+ .nav-link:hover::after {
+    width: 100%;
+ }
