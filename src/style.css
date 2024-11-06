@@ -13,14 +13,19 @@
   .nav-link::after {
     content: "";
     position: absolute;
+    top: 61px;
     left: 0;
     bottom: 0;
     width: 0;
-    height: 2px; /* Thickness of the underline */
+    height: 5px; /* Thickness of the underline */
+    border-top-left-radius: 20%;
+    border-top-right-radius: 20%;
     background-color: #F19645;
-    transition: width 0.3s ease;
+    transition: width 0.3s ease-in-out;
  }
  
  .nav-link:hover::after {
     width: 100%;
  }
+
+ 

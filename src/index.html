@@ -5,7 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Space Design</title>
     <link rel="stylesheet" href="./output.css">
-    <link rel="shortcut icon" href="../assets/spaceDesign logo.png" type="image/x-icon">
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel='stylesheet'>
+    <link rel="shortcut icon" href="../assets/spaceDesign logo.png" type="image/png">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+
 </head>
 <body>
     <div class="body-container">
@@ -27,20 +30,52 @@
                 </ul>
             </nav>
         </header>
+        <section>
+          <div class="hero flex">
+            <div class="hero-left m-4 w-[50vw]">
+              <div class="hero-wrapper flex flex-col justify-center items-left ml-28 mt-8">
+                <h1 class="text-6xl font-semibold">ELEVATE YOUR <br> SPACE WITH <br> INSPIRED DEZYN</h1>
+                <p class="w-[600px]">Transforming Spaces, Elevating Lives. Welcome to Space Design. We specialise in creating bespoke interior designs that reflect your unique style and personality.</p>
+                <div class="explore-div flex gap-8 items-center px-3 py-3">
+                  <h2 class="font-medium">Explore our Services</h2>
+                  <a href="#" class="px-3 py-3 bg-[#f19645] rounded-md text-white flex items-center">Book Now <i class='bx bx-right-arrow-alt ml-8 bx-sm'></i></a>
+                </div>
+              </div>
+            </div>
+            <div class="hero-right w-[50vw] h-[80vh] rounded-bl-[15%] overflow-hidden">
+              <div class="swiper rounded-bl-[20px] relative">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                  <!-- Slides -->
+                  <div class="swiper-slide w-full h-full">
+                    <img src="../assets/interior1.jpg" alt="Interior 1" class="w-full h-full object-cover">
+                  </div>
+                  <div class="swiper-slide w-full h-full">
+                    <img src="../assets/interior2.jpg" alt="Interior 2" class="w-full h-full object-cover">
+                  </div>
+                  <div class="swiper-slide w-full h-full">
+                    <img src="../assets/interior3.jpg" alt="Interior 3" class="w-full h-full object-cover">
+                  </div>
+                  <div class="swiper-slide w-full h-full">
+                    <img src="../assets/interior4.jpg" alt="Interior 4" class="w-full h-full object-cover">
+                  </div>
+                  ...
+                </div>
+              
+                <!-- If we need navigation buttons -->
+                 <div class="absolute top-0 z-10 flex gap-5">
+                  <p class="text-white">DISCOVER MORE</p>
+                  <div class="swiper-button-prev custom-nav-btn left-0 text-gray-500 bg-white hover:bg-gray-200"></div>
+                  <div class="swiper-button-next custom-nav-btn right-0 text-white bg-gray-500 hover:bg-gray-400"></div>
+                 </div>
+                
+
+              </div>
+            </div>
+          </div>
+        </section>
     </div>
-     <!-- <section class="hero-section">
-    <div class="hero-content">
-      <h1>ELEVATE YOUR SPACE WITH <br> INSPIRED DEZYN</h1>
-      <p>Transforming Spaces, Elevating Lives. Welcome to Space Design. We specialize in creating bespoke interior designs that reflect your unique style and personality.</p>
-      <div class="hero-buttons">
-        <button class="explore-btn">Explore our Services</button>
-        <button class="book-btn">Book Now</button>
-      </div>
-    </div>
-    <div class="hero-image">
-      <img src="interior-image.jpg" alt="Interior Design">
-    </div>
-  </section> -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="./index.js"></script>
 </body>
 </html>
